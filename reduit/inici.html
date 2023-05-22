@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="ca">
+    
+    <head>
+        
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Inici - Descobreix</title>
+	    <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <style type="text/css">
+            
+            html{
+                font-family: Verdana;
+                background-color: white;
+                
+            }
+            
+            body {
+                justify-content: center;
+                align-items: center;
+            }
+            
+            .link{
+                color: #FFD200;
+            }
+            
+        </style>
+        
+    </head>
+    
+    <body>
+        <header>
+            <div class="container">
+                <div class="icono"><a href=""></a><img src="images/icon.svg" alt="icon" height="90"></div>
+                <div class="logo"><a href=""><img src="images/logo.svg" alt="logo" height="120"></a></div>
+                <nav class="XXSS">
+                    <a href="" target="_blank"><img src="images/XXSS/twitter.png" width="30" height="30"></a>
+                    <a href="" target="_blank"><img src="images/XXSS/instagram.png" width="30" height="30"></a>
+                    <a href="" target="_blank"><img src="images/XXSS/tiktok.png" width="30" height="30"></a>
+                </nav>
+                <div class="home"><a href="#"></a></div>
+                <div class="xat"><a href=""></a></div>
+                <div class="botiga"><a href=""></a></div>
+                <div class="linkedin"><a href=""></a></div>
+                
+                <div class="flexbox">
+                    <div class="search">
+                        <div><input type="text" placeholder="Search . . ." required></div>
+                    </div>
+                </div>
+                
+                <nav class="idiomes">
+                    <ul>
+                        <li><button onclick="cambiarIdioma('ca')"><img src="images/Idiomes/ca.svg" height="20" ></button></li>
+                        <li><button onclick="cambiarIdioma('es')"><img src="images/Idiomes/es.svg" height="20"></button></li>
+                        <li><button onclick="cambiarIdioma('en')"><img src="images/Idiomes/en.svg" height="20"></button></li>
+                        <li><button onclick="cambiarIdioma('fr')"><img src="images/Idiomes/fr.svg" height="20"></button></li>
+                    </ul>
+                </nav>
+                <div class="secundari">
+                    <a href="" class="Recuadre1">Àmbit Metropolità</a>
+                    <a href="" class="Recuadre2">Alt Pirineu i Aran</a>
+                    <a href="" class="Recuadre3">Camp de Tarragona</a>
+                    <a href="" class="Recuadre4">Comarques Centrals</a>
+                    <a href="" class="Recuadre5">Comarques Gironines</a>
+                    <a href="" class="Recuadre6">Ponent</a>
+                    <a href="" class="Recuadre7">Terres de l'Ebre</a>
+                </div>
+            </div>          
+        </header>
+        <main>
+            <div class="Presentacio_Inici">
+                <div class="oscurecer">
+                    <h4>Aquesta web ha estat creada amb la idea de donar a conèixer restaurants, bars, discoteques, gelateries, museus, concerts, grups de música, festivals... de Catalunya. També és publiquen esdeveniments que hi ha importants (i no tant) arreu dels Països Catalans (i de Madrid) però sobretot més centrats a Barcelona, i Catalunya.</h4>
+                <br>
+                <br>
+                    <p>*Per la complexitat de la web només faré que funcioni tot amb alguns exemples per aquest projecte.</p>
+                </div>
+            </div>
+            <div class="barra">
+                <p><b>Totes les imatges que trobareu a la web pertanyen a <a href="https://pixabay.com/es" target="_blank" class="link"/> Pixabay</a> i <a href="https://www.google.es/maps/?hl=es" target="_blank" class="link"/>Google Maps </a></b></p>
+            </div>
+            <div class="divisio">
+		      <div class="columna1">
+                  <p>Els Països Catalans<br>són els territoris de cultura catalana on la llengua autòctona és el català, o bé els territoris que formen part d'una unitat geogràfica, històrica, cultural i lingüística de predomini català.<br><br>Són també els territoris on viuen o han viscut els catalans.</p>
+		      </div>
+		      <div class="columna2">
+                  <img src="images/Main/ppcc.svg" alt="Imagen centrada verticalmente y horizontalmente">
+		      </div>
+	       </div>
+
+
+
+
+
+</main>
+        <script>
+		function cambiarIdioma(idioma) {
+			var html = document.querySelector("html");
+			html.lang = idioma;
+
+			var contenido = document.querySelector(".Presentacio_Inici");
+			switch (idioma) {
+				case "ca":
+					contenido.innerHTML = "<h4>Aquesta web ha estat creada amb la idea de donar a conèixer restaurants, bars, discoteques, gelateries, museus, concerts, grups de música, festivals... de Catalunya. També és publiquen esdeveniments que hi ha importants (i no tant) arreu dels Països Catalans però sobretot més centrats a Barcelona, i Catalunya.</h4><p>*Per la complexitat de la web només faré que funcioni tot amb alguns exemples per aquest projecte.</p>";
+					break;
+				case "es":
+					contenido.innerHTML = "<h4>Esta web ha sido creada con la idea de dar a conocer restaurantes, bares, discotecas, heladerías, museos, conciertos, grupos de música, festivales... de Cataluña. También se publican eventos que hay importantes (y no tanto) en los Países Catalanes pero sobre todo más centrados en Barcelona, y Cataluña.</h4><p>*Por la complejidad de la web sólo haré que funcione todo con algunos ejemplos para este proyecto.</p>";
+					break;
+				case "en":
+					contenido.innerHTML = "<h4>This website has been created with the idea of promoting restaurants, bars, clubs, ice cream parlours, museums, concerts, music groups, festivals... in Catalonia. They also publish events that are important (and not so much) all over the Catalan Countries but especially more focused on Barcelona and Catalonia.</h4><p>*Due to the complexity of the web I will only make everything work with some examples for this project.</p>";
+					break;
+				case "fr":
+					contenido.innerHTML = "<h4>Ce site a été créé avec l'idée de promouvoir des restaurants, des bars, des clubs, des glaciers, des musées, des concerts, des groupes de musique, des festivals... en Catalogne. Ils publient également des événements importants (et pas tellement) dans tous les pays catalans, mais surtout plus axés sur Barcelone et la Catalogne.</h4><p>*En raison de la complexité du Web, je ne ferai tout fonctionner qu'avec certains exemples pour ce projet.</p>";
+					break;
+				default:
+					contenido.innerHTML = "<h4>Aquesta web ha estat creada amb la idea de donar a conèixer restaurants, bars, discoteques, gelateries, museus, concerts, grups de música, festivals... de Catalunya. També és publiquen esdeveniments que hi ha importants (i no tant) arreu dels Països Catalans però sobretot més centrats a Barcelona, i Catalunya.</h4><p>*Per la complexitat de la web només faré que funcioni tot amb alguns exemples per aquest projecte.</p>";
+                    break;
+			}
+		}
+	</script>
+    </body>
+</html>

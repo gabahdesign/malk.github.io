@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="CA">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Proves</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <style type="text/css">
+    .custom-navbar {
+      position: relative;
+    }
+
+.custom-navbar::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(50%) translateY(-100%);
+    width: 800px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 114px solid #212121;
+    rotate: 180deg;
+    z-index: -1;
+}
+
+    .zero {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      width: 100%;
+      height: 45px;
+      margin: auto;
+      background: #212121;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      box-sizing: border-box;
+      z-index: 1000;
+      justify-content: center;
+    }
+
+    .principal {
+      box-sizing: border-box;
+      justify-items: center;
+      text-align: center;
+      padding: 1%;
+      width: 100%;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+      background: transparent;
+      height: 12em;
+    }
+
+    .icon {
+      padding-right: 15px;
+      padding-left: 15px;
+      margin: 0;
+      top: 0;
+      animation: vibrate 1.5s linear both
+    }
+
+    @keyframes vibrate {
+      0% {
+        transform: translate(0)
+      }
+
+      25% {
+        transform: translate(-1px, 1px)
+      }
+
+      50% {
+        transform: translate(-1px, -1px)
+      }
+
+      75% {
+        transform: translate(1px, 1px)
+      }
+
+      100% {
+        transform: translate(0)
+      }
+    }
+
+    .icon:hover {
+      transform: scale(1.5);
+      color: #d79c26
+    }
+      
+      .idiomes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  /*margin-left: 50%;*/
+}
+.idiomes p, ul, li {
+  padding: 2px;
+  margin-right: 2px;
+  list-style: none;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.idiomes button {
+  background: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+.idiomes img {
+  border: 2px solid #212121;
+}
+
+      
+      .home {
+    /*grid-area: 1 / 5 / 3 / 5;
+    justify-content: space-around;*/
+    background-image: url("../images/Menu/Inici_White.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    padding: 40px 50px;
+    text-decoration: none;
+    border-radius: 20px;
+    /*border: #212121 2px solid;*/
+    background-color: #FF437B;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin: 10px;
+}
+.home:hover {
+        background-image: url("../images/Menu/Inici.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-color: #7BFC55;
+        border-color: #FF437B;
+}
+
+.contacte {
+    /*grid-area: 1 / 6 / 3 / 6;
+    justify-content: space-around;*/
+    background-image: url("../images/Menu/contacte_White.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    padding: 40px 50px;
+    text-decoration: none;
+    border-radius: 20px;
+    /*border: #212121 2px solid;*/
+    background-color: #FFD700;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin: 10px;
+}
+.contacte:hover {
+        background-image: url("../images/Menu/contacte.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-color: #7BFC55;
+        border-color: #FFD700;
+}
+
+.descobreix {
+        /*grid-area: 1 / 7 / 3 / 7;
+        justify-content: space-around;*/
+        background-image: url("../images/Menu/Descobreix_White.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 45%;
+        padding: 40px 50px;
+        text-decoration: none;
+        border-radius: 20px;
+        /*border: #212121 2px solid;*/
+        background-color: #00CED1;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        margin: 10px;
+}
+.descobreix:hover {
+        background-image: url("../images/Menu/Descobreix.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-color: #7BFC55;
+        border-color: #00CED1;
+        }
+
+.botiga {
+        /*grid-area: 1 / 8 / 3 / 8;
+        justify-content: space-around;*/
+        background-image: url("../images/Menu/Tenda_White.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        padding: 40px 50px;
+        text-decoration: none;
+        border-radius: 20px;
+        /*border: #212121 2px solid;*/
+        background-color: #FFA500;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        margin: 10px;
+}
+.botiga:hover {
+        background-image: url("../images/Menu/Tenda.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-color: #7BFC55;
+        border-color: #FFA500;
+}
+
+.FAQ {
+        /*grid-area: 1 / 9 / 3 / 9;
+        justify-content: space-around;*/
+        background-image: url("../images/Menu/FAQS_White.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        padding: 40px 50px;
+        text-decoration: none;
+        border-radius: 20px;
+        /*border: #212121 2px solid;*/
+        background-color: #212121;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        margin: 10px;
+}
+.FAQ:hover {
+        background-image: url("../images/Menu/FAQS.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-color: #7BFC55;
+        border-color: #212121;
+}
+      
+  </style>
+</head>
+
+<body>
+  <div class="custom-navbar">
+    <div class="zero">
+                <tr>
+                    <td>
+                        <nav class="XXSS">
+                            <a href="https://twitter.com/gabahdesign" target="_blank"><img src="images/XXSS/twitter_white.svg" width="20" height="20"></a>
+                            <a href="https://www.instagram.com/gabahdesign/" target="_blank"><img src="images/XXSS/instagram_white.svg" width="20" height="20"></a>
+                            <a href="https://www.tiktok.com/@unacadira" target="_blank"><img src="images/XXSS/tiktok_white.svg" width="20" height="20"></a>
+                            <a href="https://www.youtube.com/@gabahdesign" target="_blank"><img src="images/XXSS/youtube_white.svg" width="20" height="20"></a>
+                            <a href="https://www.linkedin.com/in/gabahdesign/" target="_blank"><img src="images/XXSS/linkedin_white.svg" width="20" height="20"></a>
+                            <a href="https://t.me/unacadira" target="_blank"><img src="images/XXSS/telegram_white.svg" width="20" height="20"></a> 
+                        </nav>
+                        <div class="cercador">
+                            <input type="search" id="search" placeholder="Search..." />
+                        </div>
+                    </td>
+                    <td>
+                        <nav class="idiomes">
+                            <ul>
+                                <li><button onclick="cambiarIdioma('ca')"><p>Català</p><!--<img src="images/Idiomes/ca.svg" height="20">--></button></li>
+                                <li><button onclick="cambiarIdioma('es')"><p>Español</p><!--<img src="images/Idiomes/es.svg" height="20">--></button></li>
+                                <li><button onclick="cambiarIdioma('en')"><p>English</p><!--<img src="images/Idiomes/en.svg" height="20">--></button></li>
+                                <li><button onclick="cambiarIdioma('fr')"><p>Français</p><!--<img src="images/Idiomes/fr.svg" height="20">--></button></li>
+                            </ul>
+                        </nav>
+                    </td>
+                </tr>
+            </div>
+</div>
+      <div class="custom-navbar::after">
+   <nav class="principal">
+                <div class="icon">
+                        <a href=""><img src="images/logo.svg" alt="logo" height="90"></a>
+                    </div>
+                    <a class="home" href="Index.html"></a>
+                    <a class="contacte" href="Contacte.html"></a>
+                    <a class="descobreix" href=""></a>
+                    <a class="botiga" href=""></a>
+                    <a class="FAQ" href=""></a>
+            </nav>
+      
+</div>
+    
+            
+    
+    
+</body>
+
+</html>

@@ -1,0 +1,90 @@
+.Presentacio_Inici {
+            display: block;
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-position: center;
+            height: 863px;
+            text-align: center;
+            width: 100%;
+            box-sizing: border-box;
+            position: relative; /* Agregamos posicion relativa para poder ubicar el div oscurecido */
+            z-index: 0;
+            padding: 10px;
+            transition: background-image 3s ease-in-out;
+            animation: cambiar-imagen 10s infinite;
+        }
+            @keyframes cambiar-imagen {
+                0% {
+                    background-image: url('../images/Inici/Inici.jpg');
+                    }
+                35% {
+                    background-image: url('../images/Inici/Inici3.jpg');
+                    }
+                75% {
+                    background-image: url('../images/Inici/Inici5.jpg');
+                    }
+                100% {
+                    background-image: url('../images/Inici/Inici.jpg');
+                    }
+                }
+        .Presentacio_Inici::before { /* Agregamos un pseudoelemento para crear el fondo oscurecido */
+            content: "";
+            background-color: rgba(100, 100, 100, 0);
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -1;
+        }
+
+
+
+.Presentacio_Inici p {
+  color: black;
+  margin: 0;
+  padding: 20px;
+  background-color: white;
+  width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  transform: translate(107%, -50%);
+}
+
+.Presentacio_Inici h4 {
+  color: black;
+  margin-top: 20px; /* Cambia el valor según sea necesario */
+  background-color: white;
+  padding: 20px;
+  margin-top: 350px;
+  width: 600px;
+  border-radius: 10px;
+  text-align: center;
+  transform: translate(107%, -50%);
+}
+
+
+
+/*Separador*/
+
+.barra {
+    display: block;
+    justify-content: center;
+    padding-top: 15px;
+    width: 100%;
+    height: 7vh;
+    background: white;
+    /*border-top: #212121 3px solid;*/
+    border-bottom: #212121 3px solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-sizing: border-box;
+    
+}
+.barra p{
+    margin: 0 10px;
+    padding: 0px 15px 0px 15px;
+    text-decoration: none;
+    color: #212121;
+    text-align: center;
+    justify-content: center;
+}

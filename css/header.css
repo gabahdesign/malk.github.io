@@ -1,0 +1,439 @@
+header{
+    justify-content: center;
+    align-items: center;
+    display: block;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.fixed-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 9999;
+}
+
+body {
+  padding-top: 90px;
+}
+
+.custom-navbar {
+      position: relative;
+    }
+
+.custom-navbar::after {
+    content: "";
+    position: absolute;
+    left: 50%;
+    bottom: 0px;
+    transform: translateX(50%) translateY(-100%);
+    width: 800px;
+    border-left: 50px solid transparent;
+    border-right: 50px solid transparent;
+    border-bottom: 114px solid #212121;
+    rotate: 180deg;
+    z-index: -1;
+}
+
+
+
+/*Barra 1*/
+.zero {
+    display: flex;
+    justify-content: flex-start; /* distribuye los elementos alineados al inicio, en el medio y al final de la fila */
+    align-items: center; /* alinea verticalmente los elementos */
+    width: 100%;
+    height:45px; /*Anchura de la barra*/
+    margin:auto;
+    background: #212121; /*Color de fondo de la barra*/
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-sizing: border-box;
+    z-index: 1000;
+    justify-content: center;
+}
+
+.XXSS{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+}
+
+.cercador input#search{
+  width: 250px;
+  height: 30px;
+  background: transparent;
+  border: 2px solid white;
+  font-size: 10pt;
+  float: left;
+  color: white;
+  padding-left: 10px;
+  border-radius: 5px;
+}
+
+.idiomes {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: right;
+  /*margin-left: 50%;*/
+}
+.idiomes p, ul, li {
+  padding: 2px;
+  margin-right: 2px;
+  list-style: none;
+  border: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.idiomes p{
+    color:white;
+    cursor: pointer;
+}
+.idiomes button {
+  background: transparent;
+  border: none;
+  align-items: center;
+  justify-content: center;
+}
+.idiomes img {
+  border: 2px solid #212121;
+}
+
+/*Barra 2*/
+.principal {
+    box-sizing: border-box;
+    /*margin: 0px auto;*/
+    /*display: grid;*/
+    /*grid-template-columns: repeat(4, 1fr);*/
+    /*gap: 10px 10px;*/
+    justify-items: center;
+    /*justify-content: center;*/
+    text-align: center;
+    padding: 1%;
+    /*padding-top: 70px;*/
+    width: 100%;
+    /*box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;*/
+    /*background: white;*/
+    height: 12em;
+    }
+
+.icon{
+    padding-right: 15px;
+    padding-left: 15px;
+    margin: 0;
+    top: 0;
+    animation:vibrate 1.5s linear both}
+    @keyframes vibrate{0%{transform:translate(0)}
+        25%{transform:translate(-1px,1px)}
+        50%{transform:translate(-1px,-1px)}
+        75%{transform:translate(1px,1px)}
+        100%{transform:translate(0)}
+    }
+.icon{
+animation:shake-left-right 0.8s linear both}
+    @keyframes shake-left-right{0%,100%{transform:rotate(0deg);transform-origin:50% 50%}
+        10%{transform:rotate(8deg)}
+        20%,40%,60%{transform:rotate(-10deg)}
+        30%,50%,70%{transform:rotate(10deg)}
+        80%{transform:rotate(-8deg)}
+        90%{transform:rotate(8deg)}
+    }
+
+.icon2{
+    background-image: url("../images/logo_white.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    z-index: 40;
+}
+
+.home {
+    /*grid-area: 1 / 5 / 3 / 5;
+    justify-content: space-around;*/
+    background-image: url("../images/Menu/Inici_White.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    padding: 40px 50px;
+    text-decoration: none;
+    border-radius: 20px;
+    /*border: #212121 2px solid;*/
+    background-color: #FF437B;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin: 10px;
+}
+.home:hover {
+        background-image: url("../images/Menu/Inici.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-color: #7BFC55;
+        border-color: #FF437B;
+}
+
+.contacte {
+    /*grid-area: 1 / 6 / 3 / 6;
+    justify-content: space-around;*/
+    background-image: url("../images/Menu/contacte_White.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    padding: 40px 50px;
+    text-decoration: none;
+    border-radius: 20px;
+    /*border: #212121 2px solid;*/
+    background-color: #FFD700;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    margin: 10px;
+}
+.contacte:hover {
+        background-image: url("../images/Menu/contacte.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-color: #7BFC55;
+        border-color: #FFD700;
+}
+
+.descobreix {
+        /*grid-area: 1 / 7 / 3 / 7;
+        justify-content: space-around;*/
+        background-image: url("../images/Menu/Descobreix_White.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 45%;
+        padding: 40px 50px;
+        text-decoration: none;
+        border-radius: 20px;
+        /*border: #212121 2px solid;*/
+        background-color: #00CED1;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        margin: 10px;
+}
+.descobreix:hover {
+        background-image: url("../images/Menu/Descobreix.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 45%;
+        background-color: #7BFC55;
+        border-color: #00CED1;
+        }
+
+.botiga {
+        /*grid-area: 1 / 8 / 3 / 8;
+        justify-content: space-around;*/
+        background-image: url("../images/Menu/Tenda_White.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        padding: 40px 50px;
+        text-decoration: none;
+        border-radius: 20px;
+        /*border: #212121 2px solid;*/
+        background-color: #FFA500;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        margin: 10px;
+}
+.botiga:hover {
+        background-image: url("../images/Menu/Tenda.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-color: #7BFC55;
+        border-color: #FFA500;
+}
+
+.FAQ {
+        /*grid-area: 1 / 9 / 3 / 9;
+        justify-content: space-around;*/
+        background-image: url("../images/Menu/FAQS_White.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        padding: 40px 50px;
+        text-decoration: none;
+        border-radius: 20px;
+        /*border: #212121 2px solid;*/
+        background-color: #39CF32;
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+        margin: 10px;
+}
+.FAQ:hover {
+        background-image: url("../images/Menu/FAQS.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 30%;
+        background-color: #7BFC55;
+        border-color: #212121;
+}
+
+input#abrir-cerrar {
+    visibility: hidden;
+    position: absolute;
+    top: -10000px;
+  }
+
+  label[for="abrir-cerrar"] {
+    cursor: pointer;
+    padding: auto;
+    background-color: transparent;
+    color: #FFD200;
+    display: inline-block;
+    /*width: 100%;*/
+  }
+
+  #sidebar {
+    width: 0;
+  }
+
+  input#abrir-cerrar:checked ~ #sidebar {
+    width: 300px;
+  }
+
+  .sidebar {
+    position: fixed;
+    height: 100%;
+    width: 0;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background-color: rgba(0, 0, 0, 0.9);
+    overflow-x: hidden;
+    transition: 0.4s;
+    padding: 1rem 0;
+    box-sizing: border-box;
+  }
+
+  .sidebar .boton-cerrar {
+    position: absolute;
+    top: 0.5rem;
+    right: 1rem;
+    font-size: 2rem;
+    display: block;
+    padding: 0;
+    line-height: 1.5rem;
+    margin: 0;
+    height: 32px;
+    width: 32px;
+    text-align: center;
+    vertical-align: top;
+  }
+
+  .abrir-cerrar {
+    color: #2E88C7;
+    font-size: 1rem;
+  }
+
+  #abrir-cerrar {
+    appearance: none;
+  }
+
+  .menu {
+    width: 200px;
+  }
+
+  .menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 4rem auto;
+    display: block;
+    width: 80%;
+    min-width: 200px;
+  }
+
+  .menu ul,
+  .menu li {
+    margin: 0;
+    padding: 0;
+    list-style: none inside;
+  }
+
+  .menu a {
+    display: block;
+    padding: 8px;
+    font-size: 120%;
+    color: white;
+    text-decoration: none;
+  }
+
+  .menu a:hover {
+    color: #FFD200;
+  }
+
+  .menu .sub-menu {
+    display: none;
+  }
+
+  .menu .sub-sub-menu {
+    display: none;
+  }
+
+  .menu .active-submenu > .sub-menu {
+    display: block;
+  }
+
+  .menu .active-subsubmenu > .sub-sub-menu {
+    display: block;
+  }
+
+  .has-submenu .sub-menu {
+    display: none;
+  }
+
+  .submenu-toggle:checked + label + .sub-menu {
+    display: block;
+  }
+
+  .has-submenu-barcelona .sub-sub-menu-barcelona,
+  .has-submenu-girona .sub-sub-menu-girona,
+  .has-submenu-lleida .sub-sub-menu-lleida,
+  .has-submenu-tarragona .sub-sub-menu-tarragona {
+    display: none;
+  }
+
+  .submenu-toggle:checked + label + .sub-menu .has-submenu-barcelona .sub-sub-menu-barcelona,
+  .submenu-toggle:checked + label + .sub-menu .has-submenu-girona .sub-sub-menu-girona,
+  .submenu-toggle:checked + label + .sub-menu .has-submenu-lleida .sub-sub-menu-lleida,
+  .submenu-toggle:checked + label + .sub-menu .has-submenu-tarragona .sub-sub-menu-tarragona {
+    display: block;
+  }
+
+.separador{
+    height: 400px;
+    background-color: white;
+}
+
+
+
+/*  Colors Links Generals  */
+.link{
+    color: #7BFC55;
+}
+.link_fosc{
+    color: #FF437B;
+}
+
+    /*background: #FFD200;*/
+       /*-----Nav - Icon-----*/
+/* ----------------------------------------------
+  Generated by AnimatiSS
+  Licensed under FreeBSD License
+  URL: https://xsgames.co/animatiss
+  Twitter: @xsgames_
+---------------------------------------------- */
+
+       /*-----Links ajuda-----*/
+/* ----------------------------------------------
+https://svgconverter.com/es/svg-optimizer
+https://css-tricks.com/using-svg/
+https://developer.mozilla.org/es/docs/Web/SVG/Attribute
+https://getcssscan.com/css-box-shadow-examples
+https://www.youtube.com/watch?v=ByraB2uMAiM
+https://flagicons.lipis.dev/
+https://alvarotrigo.com/blog/animated-slider/
+https://grid.layoutit.com/
+
+---------------------------------------------- */

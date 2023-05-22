@@ -1,0 +1,344 @@
+
+  /* Tamaño por defecto pantallas (1280-1024) */
+  @media all and (min-width: 1024px) and (max-width: 1280px) { }
+  
+
+/*-----tablets-----*/
+
+  /* Tamaño tablet horizontal (1024-768) */
+  @media all and (min-width: 768px) and (max-width: 1024px) { }
+  
+  /* Tamaño tablet (768-480) */
+  @media all and (min-width: 480px) and (max-width: 768px) { }
+
+/*-----moviles-----*/
+  
+  /* Tamaño teléfonos (480-menos ) */
+  @media all and (max-width: 480px) { }
+  
+  /*  Orientación: Vertical */
+  @media screen and (orientation:portrait) { }
+  
+  /* Orientación: Horizontal  */
+  @media screen and (orientation:landscape) { }
+  
+  /* iPhone - Orientación: Vertical */
+  @media screen and (max-device-width: 480px) and (orientation:portrait) { } 
+  
+  /* iPhone - Orientación: Horizontal  */
+  @media screen and (max-device-width: 480px) and (orientation:landscape) { }
+  
+  /* iPad - Orientación: Vertical */
+  @media screen and (min-device-width: 481px) and (orientation:portrait) { }
+  
+  /* iPad - Orientación: Horizontal  */
+  @media screen and (min-device-width: 481px) and (orientation:landscape) { }
+
+
+
+
+
+
+
+
+
+/*-----navegador-----*/
+
+header{
+    justify-content: center;
+    align-items: center;
+    top:0px;
+    margin:0px;
+}
+
+.container {
+  /*  padding-top: 20px;  */
+    display: grid;
+    grid-template-columns: repeat(9, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    gap: 10px 10px;
+    justify-items: center;
+}
+
+.icono {
+    grid-area: 1 / 2 / 3 / 1;
+    margin-top: 30px;
+    margin-left: 15px;
+    flex-direction: column; /* Establecemos la dirección como columna */
+}
+@media screen and (min-width: 600px){
+    display: none;
+}
+
+
+
+.logo {
+    display: block;
+    grid-area: 1 / 2 / 3 / 3;
+    padding-top: 10px;
+    animation:vibrate 1.5s linear both}
+@keyframes vibrate{0%{transform:translate(0)}
+    25%{transform:translate(-1px,1px)}
+    50%{transform:translate(-1px,-1px)}
+    75%{transform:translate(1px,1px)}
+    100%{transform:translate(0)}
+    animation:shake-left-right 0.8s linear both}
+@keyframes shake-left-right{0%,100%{transform:rotate(0deg);transform-origin:50% 50%}
+    10%{transform:rotate(8deg)}
+    20%,40%,60%{transform:rotate(-10deg)}
+    30%,50%,70%{transform:rotate(10deg)}
+    80%{transform:rotate(-8deg)}
+    90%{transform:rotate(8deg)}
+}
+
+.XXSS {
+    grid-area: 1 / 4 / 3 / 3;
+    flex-direction: column; /* Establecemos la dirección como columna */
+    align-items: left; /* Centramos verticalmente los elementos */
+    position:relative; /* Añadimos la posición relativa al contenedor */
+}
+.XXSS a {
+    position: absolute; /* Añadimos la posición absoluta a las imágenes */
+}
+.XXSS a:nth-child(2) {
+    top: 50%; /* Desplazamos la segunda imagen hacia abajo el 50% del contenedor */
+    transform: translateY(-50%); /* Ajustamos el posicionamiento vertical */
+}
+.XXSS a:nth-child(3) {
+    top: 100%; /* Desplazamos la tercera imagen hacia abajo el 100% del contenedor */
+    transform: translateY(-100%); /* Ajustamos el posicionamiento vertical */
+}
+
+
+.home {
+    grid-area: 1 / 6 / 3 / 6;
+    background-image: url("../images/Menu/Inici.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    align-items: center;
+    margin: 5px;
+    padding: 15px 60px;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    border: black 2px solid;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.home:hover {
+        background-image: url("../images/Menu/Inici_White.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-color: black;
+}
+
+.xat {
+    grid-area: 2 / 7 / 2 / 7;
+    justify-content: space-around;
+    align-items: center;
+    background-image: url("../images/Menu/Xat.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 25%;
+    margin: 5px;
+    padding: 7.5px 110px 45px 50px;
+    text-decoration: none;
+    color: black;
+    border-radius: 15px;
+    justify-content: center;
+    align-items: center;
+    border: black 2px solid;
+    background-color: white;
+    box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.xat:hover {
+        background-image: url("../images/Menu/Xat_White.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-color: black;
+}
+
+.botiga {
+        grid-area: 2 / 8 / 2 / 8;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url("../images/Menu/Tenda.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        margin: 5px;
+        padding: 7.5px 110px 45px 50px;
+        text-decoration: none;
+        color: black;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        border: black 2px solid;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.botiga:hover {
+        background-image: url("../images/Menu/Tenda_White.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-color: black;
+}
+
+.linkedin {
+        grid-area: 2 / 9 / 2 / 9;
+        justify-content: space-around;
+        align-items: center;
+        background-image: url("../images/Menu/LinkedIn.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        margin: 5px;
+        padding: 7.5px 110px 45px 50px;
+        text-decoration: none;
+        color: black;
+        border-radius: 15px;
+        justify-content: center;
+        align-items: center;
+        border: black 2px solid;
+        background-color: white;
+        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+}
+.linkedin:hover {
+        background-image: url("../images/Menu/LinkedIn_White.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: 25%;
+        background-color: black;
+        }
+
+.flexbox {
+  grid-area: 1 / 7 / 2 / 8;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.search > div {
+  display: inline-block;
+  position: relative;
+  filter: drop-shadow(1 1px black);
+}
+.search > div:after {
+  content: "";
+  background: black;
+  width: 2px;
+  height: 10px;
+  position: absolute;
+  top: 20px;
+  right: 1px;
+  transform: rotate(135deg);
+}
+.search > div > input {
+  color: black;
+  font-size: 14px;
+  width: 13px;
+  height: 13px;
+  padding: 5px;
+  border: solid 1px black;
+  outline: none;
+  border-radius: 20px;
+  transition: width 0.5s;
+}
+.search > div > input::placeholder {
+  color: black;
+  opacity: 0;
+  transition: opacity 150ms ease-out;
+}
+.search > div > input:focus::placeholder {
+  opacity: 1;
+}
+.search > div > input:focus,
+.search > div > input:not(:placeholder-shown) {
+  width: 150px;
+}
+
+
+.idiomes {
+    grid-area: 1 / 8 / 3 / 8;
+    justify-content: center;
+    align-items: center;
+}
+.idiomes ul, li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.idiomes button{
+  color: #3D3D3D;
+  background: #fff;
+  border: none;
+}
+.idiomes img{
+    border: 2px solid black;
+}
+
+.secundari {
+    grid-area: 3 / 1 / 3 / 10;
+    display: flex;
+    justify-content: center;
+    top: 0;
+    padding: 15px;
+    width: 100%;
+    /*background: #FFD200;*/
+    background: #d41608;
+    border-top: black 3px solid;
+    border-bottom: black 3px solid;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 30px 60px -12px inset, rgba(0, 0, 0, 0.3) 0px 18px 36px -18px inset;
+    box-sizing: border-box;
+}
+.Recuadre1{
+    grid-area: 2 / 1 / 3 / 10;
+    margin: 0 30px;
+    padding: 6px 15px 6px 15px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.secundari a{
+    margin: 0 30px;
+    padding: 6px 15px 6px 15px;
+    text-decoration: none;
+    color: black;
+    background-color: white;
+    border: black 2px solid;
+    border-radius: 5px;
+    box-shadow: rgba(0, 0, 0, 0.45) 0px 25px 20px -20px;
+}
+.secundari a:hover{
+    background-color: black;
+    color:white;
+        }
+
+
+
+
+
+
+
+
+       /*-----peu-----*/
+
+footer{
+    background-color: #c4c46b;
+    padding: 1.5%;
+    text-align: right;
+}
+
+footer a{
+    padding: 6px 15px 6px 15px;
+}
