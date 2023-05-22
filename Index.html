@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ca">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+	    <title>Inici - Malk</title>
+        
+        <!-- Favicon -->
+        <link href="img/favicon.ico" rel="icon">
+        
+        <!-- CSS Libraries -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        
+        <!-- Template Stylesheet -->
+	    <link rel="stylesheet" href="css/header.css">
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/footer.css">
+        <link rel="stylesheet" href="css/contacte.css">
+        
+        <style type="text/css">
+            
+            *, ::after, ::before {
+                box-sizing: border-box;
+            }
+            
+            html{
+                font-family: Verdana;
+                background-color: white;
+                width: 100%;
+                max-width: 100%;
+                padding: 0;
+                margin: 0;
+            }
+            
+            body {
+                display:contents;
+                justify-content: center;
+                align-items: center;
+            }
+            
+        </style>
+    </head>
+    
+    
+    
+    <!-- Actualitzar Javascipt amb html actual i css actual-->
+    <body>
+        <header>
+            <nav class="fixed-nav">
+                <div class="custom-navbar">
+                    <div class="zero">
+                        <tr>
+                            <td>
+                                <nav class="XXSS">
+                                    <a href="https://twitter.com/gabahdesign" target="_blank"><img src="images/XXSS/twitter_white.svg" width="20" height="20"></a>
+                                    <a href="https://www.instagram.com/gabahdesign/" target="_blank"><img src="images/XXSS/instagram_white.svg" width="20" height="20"></a>
+                                    <a href="https://www.tiktok.com/@unacadira" target="_blank"><img src="images/XXSS/tiktok_white.svg" width="20" height="20"></a>
+                                    <a href="https://www.youtube.com/@gabahdesign" target="_blank"><img src="images/XXSS/youtube_white.svg" width="20" height="20"></a>
+                                    <a href="https://www.linkedin.com/in/gabahdesign/" target="_blank"><img src="images/XXSS/linkedin_white.svg" width="20" height="20"></a>
+                                    <a href="https://t.me/unacadira" target="_blank"><img src="images/XXSS/telegram_white.svg" width="20" height="20"></a> 
+                                </nav>
+                                <div class="cercador">
+                                    <input type="search" id="search" placeholder="Search..." />
+                                </div>
+                            </td>
+                            <td>
+                                <nav class="idiomes">
+                                    <ul>
+                                        <li><button onclick="cambiarIdioma('ca')"><p>Català</p><!--<img src="images/Idiomes/ca.svg" height="20">--></button></li>
+                                        <li><button onclick="cambiarIdioma('es')"><p>Español</p><!--<img src="images/Idiomes/es.svg" height="20">--></button></li>
+                                        <li><button onclick="cambiarIdioma('en')"><p>English</p><!--<img src="images/Idiomes/en.svg" height="20">--></button></li>
+                                        <li><button onclick="cambiarIdioma('fr')"><p>Français</p><!--<img src="images/Idiomes/fr.svg" height="20">--></button></li>
+                                    </ul>
+                                </nav>
+                                <input type="checkbox" id="abrir-cerrar" name="abrir-cerrar" value="">
+                                <label for="abrir-cerrar">&#9776; <span class="abrir"></span><span class="cerrar"></span></label>
+                                <div id="sidebar" class="sidebar">
+                                  <nav class="menu">
+                                            <li><a href="#">Inicio</a></li>
+                                                <li>
+                                                    <a href="#">Desapareix</a>
+                                                        <ul>
+                                                            <a href="#">Barcelona</a>
+                                                                <li><a href="#">Alt Penedès</a></li>
+                                                                <li><a href="#">Anoia</a></li>
+                                                                <li><a href="#">Bages</a></li>
+                                                                <li><a href="#">Baix Llobregat</a></li>
+                                                                <li><a href="#">Barcelonès</a></li>
+                                                                <li><a href="#">Berguedà</a></li>
+                                                                <li><a href="#">Garraf</a></li>
+                                                                <li><a href="#">Maresme</a></li>
+                                                                <li><a href="#">Moianès</a></li>
+                                                                <li><a href="#">Osona</a></li>
+                                                                <li><a href="#">Vallès Occidental</a></li>
+                                                                <li><a href="#">Vallès Oriental</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <a href="#">Girona</a>
+                                                                <li><a href="#">Alt Empordà</a></li>
+                                                                <li><a href="#">Baix Empordà</a></li>
+                                                                <li><a href="#">Gironès</a></li>
+                                                                <li><a href="#">Garrotxa</a></li>
+                                                                <li><a href="#">Pla de l'Estany</a></li>
+                                                                <li><a href="#">Ripollès</a></li>
+                                                                <li><a href="#">Selva</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <a href="#">Lleida</a>
+                                                                <li><a href="#">Alta Ribagorça</a></li>
+                                                                <li><a href="#">Alt Urgell</a></li>
+                                                                <li><a href="#">Baixa Cerdanya</a></li>
+                                                                <li><a href="#">Garrigues</a></li>
+                                                                <li><a href="#">Noguera</a></li>
+                                                                <li><a href="#">Pallars Jussà</a></li>
+                                                                <li><a href="#">Pallars Sobirà</a></li>
+                                                                <li><a href="#">Pla d'Urgell</a></li>
+                                                                <li><a href="#">Segarra</a></li>
+                                                                <li><a href="#">Segrià</a></li>
+                                                                <li><a href="#">Solsonès</a></li>
+                                                                <li><a href="#">Urgell</a></li>
+                                                                <li><a href="#">Vall d'Aran</a></li>
+                                                        </ul>
+                                                        <ul>
+                                                            <a href="#">Tarragona</a>
+                                                                <li><a href="#">Alt Camp</a></li>
+                                                                <li><a href="#">Baix Camp</a></li>
+                                                                <li><a href="#">Baix Ebre</a></li>
+                                                                <li><a href="#">Baix Penedès</a></li>
+                                                                <li><a href="#">Conca de Barberà</a></li>
+                                                                <li><a href="#">Ribera d'Ebre</a></li>
+                                                                <li><a href="#">Montsià</a></li>
+                                                                <li><a href="#">Priorat</a></li>
+                                                                <li><a href="#">Tarragonès</a></li>
+                                                                <li><a href="#">Terra Alta</a></li>
+                                                        </ul>
+                                                </li>
+                                            <li><a href="#">Botiga</a></li>
+                                            <li><a href="#">Contacte</a></li>
+                                            <li><a href="#">FAQ's</a></li>
+                                    </nav>
+                                </div>
+                            </td>
+                        </tr>
+                    </div>
+            </div>
+            <div class="custom-navbar::after">
+                <nav class="principal">
+                    <div class="icon">
+                            <a href=""><img src="images/logo.svg" alt="logo" height="90"></a>
+                        </div>
+                        <a class="home" href="Index.html"></a>
+                        <a class="contacte" href="Contacte.html"></a>
+                        <a class="descobreix" href=""></a>
+                        <a class="botiga" href=""></a>
+                        <a class="FAQ" href=""></a>
+                </nav>
+            </div>
+        </nav>
+            
+        </header>
+        
+        <!--<div class="separador"></div>-->
+        
+        <main>
+            <div class="Presentacio_Inici">
+                    <h4>Aquesta web ha estat creada amb la idea de donar a conèixer<br>restaurants, bars, discoteques, gelateries, museus,<br>concerts, grups de música, festivals... de Catalunya.<br>També és publiquen esdeveniments d'arreu dels Països Catalans i de Madrid,<br>però sobretot més centralitzats a Barcelona.</h4>
+                <br>
+                <br>
+                    <p>*Per la complexitat de la web només faré que funcioni tot amb alguns exemples per aquest projecte.</p>
+            </div>
+            <div class="barra">
+                <p><b>Totes les imatges que trobareu a la web pertanyen a <a href="https://pixabay.com/es" target="_blank" class="link_fosc"/> Pixabay</a> i <a href="https://www.google.es/maps/?hl=es" target="_blank" class="link_fosc"/>Google Maps </a></b></p>
+            </div>
+        </main>
+
+        <footer>
+            
+            <!-- Comença el peu de pàgina -->
+            <div class="footer">
+                <div class="container_footer-fluid">
+                    <div class="container_footer">
+                        <div class="footer_info">
+                            <h2>Descobreix S.A.</h2>
+                            <div class="footer_menu">
+                                <p>Copyright &copy; 2023 Descobreix, tots els drets reservats.</p>
+                            </div>
+                            <nav class="XXSS">
+                                <a href="https://twitter.com/gabahdesign" target="_blank"><img src="images/XXSS/twitter_white.svg" width="20" height="20"></a>
+                                <a href="https://www.instagram.com/gabahdesign/" target="_blank"><img src="images/XXSS/instagram_white.svg" width="20" height="20"></a>
+                                <a href="https://www.tiktok.com/@unacadira" target="_blank"><img src="images/XXSS/tiktok_white.svg" width="20" height="20"></a>
+                                <a href="https://www.youtube.com/@gabahdesign" target="_blank"><img src="images/XXSS/youtube_white.svg" width="20" height="20"></a>
+                                <a href="https://www.linkedin.com/in/gabahdesign/" target="_blank"><img src="images/XXSS/linkedin_white.svg" width="20" height="20"></a>
+                                <a href="https://t.me/unacadira" target="_blank"><img src="images/XXSS/telegram_white.svg" width="20" height="20"></a>
+                            </nav>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Acaba el peu de pàgina -->
+            
+            <!-- Back to Top -->
+            <a href="#" class="btn-primary back-to-top" style="display: inline;"><i class="fa fa-angle-double-up"></i></a>
+            
+        </footer>
+
+        <script>
+		function cambiarIdioma(idioma) {
+			var html = document.querySelector("html");
+			html.lang = idioma;
+
+			var contenido = document.querySelector(".Presentacio_Inici");
+			switch (idioma) {
+				case "ca":
+					contenido.innerHTML = "<h4>Aquesta web ha estat creada amb la idea de donar a conèixer restaurants, bars, discoteques, gelateries, museus, concerts, grups de música, festivals... de Catalunya. També és publiquen esdeveniments que hi ha importants (i no tant) arreu dels Països Catalans però sobretot més centrats a Barcelona, i Catalunya.</h4><p>*Per la complexitat de la web només faré que funcioni tot amb alguns exemples per aquest projecte.</p>";
+					break;
+				case "es":
+					contenido.innerHTML = "<h4>Esta web ha sido creada con la idea de dar a conocer restaurantes, bares, discotecas, heladerías, museos, conciertos, grupos de música, festivales... de Cataluña. También se publican eventos que hay importantes (y no tanto) en los Países Catalanes pero sobre todo más centrados en Barcelona, y Cataluña.</h4><p>*Por la complejidad de la web sólo haré que funcione todo con algunos ejemplos para este proyecto.</p>";
+					break;
+				case "en":
+					contenido.innerHTML = "<h4>This website has been created with the idea of promoting restaurants, bars, clubs, ice cream parlours, museums, concerts, music groups, festivals... in Catalonia. They also publish events that are important (and not so much) all over the Catalan Countries but especially more focused on Barcelona and Catalonia.</h4><p>*Due to the complexity of the web I will only make everything work with some examples for this project.</p>";
+					break;
+				case "fr":
+					contenido.innerHTML = "<h4>Ce site a été créé avec l'idée de promouvoir des restaurants, des bars, des clubs, des glaciers, des musées, des concerts, des groupes de musique, des festivals... en Catalogne. Ils publient également des événements importants (et pas tellement) dans tous les pays catalans, mais surtout plus axés sur Barcelone et la Catalogne.</h4><p>*En raison de la complexité du Web, je ne ferai tout fonctionner qu'avec certains exemples pour ce projet.</p>";
+					break;
+				default:
+					contenido.innerHTML = "<h4>Aquesta web ha estat creada amb la idea de donar a conèixer restaurants, bars, discoteques, gelateries, museus, concerts, grups de música, festivals... de Catalunya. També és publiquen esdeveniments que hi ha importants (i no tant) arreu dels Països Catalans però sobretot més centrats a Barcelona, i Catalunya.</h4><p>*Per la complexitat de la web només faré que funcioni tot amb alguns exemples per aquest projecte.</p>";
+                    break;
+			}
+            
+            var contenido = document.querySelector(".barra");
+			switch (idioma) {
+				case "ca":
+					contenido.innerHTML = '<p><b>Totes les imatges que trobareu a la web pertanyen a <a href="https://pixabay.com/es" target="_blank" class="link_fosc"/> Pixabay</a> i <a href="https://www.google.es/maps/?hl=es" target="_blank" class="link_fosc"/>Google Maps </a></b></p>';
+                break;
+				case "es":
+					contenido.innerHTML = '<p><b>Todas las imagenes que encontrareis en la web pertenecen a <a href="https://pixabay.com/es" target="_blank" class="link_fosc"/> Pixabay</a> y <a href="https://www.google.es/maps/?hl=es" target="_blank" class="link_fosc"/>Google Maps </a></b></p>';
+					break;
+				case "en":
+					contenido.innerHTML = '<p><b>All the images you will find on the web belong to <a href="https://pixabay.com/es" target="_blank" class="link_fosc"/> Pixabay</a> and <a href="https://www.google.es/maps/?hl=es" target="_blank" class="link_fosc"/>Google Maps </a></b></p>';
+					break;
+				case "fr":
+					contenido.innerHTML = '<p><b>Toutes les images que vous trouverez sur le web appartiennent à <a href="https://pixabay.com/es" target="_blank" class="link_fosc"/> Pixabay</a> et <a href="https://www.google.es/maps/?hl=es" target="_blank" class="link_fosc"/>Google Maps </a></b></p>';
+					break;
+				default:
+					contenido.innerHTML = '<p><b>Totes les imatges que trobareu a la web pertanyen a <a href="https://pixabay.com/es" target="_blank" class="link_fosc"/> Pixabay</a> i <a href="https://www.google.es/maps/?hl=es" target="_blank" class="link_fosc"/>Google Maps </a></b></p>';
+                    break;
+			}       
+		}
+        </script>
+        <script src="js/script_menu_vertical.js"></script>
+    </body>
+</html>
